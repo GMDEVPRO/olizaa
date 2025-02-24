@@ -1,0 +1,2 @@
+
+web: java -jar build/libs/olizaa-0.0.1-SNAPSHOT.jar

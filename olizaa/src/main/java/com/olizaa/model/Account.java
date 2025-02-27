@@ -11,19 +11,18 @@ import java.math.BigDecimal;
 public class Account {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true)
-    private  String number;
-
+    private String number;
 
     private String agency;
 
     @Column(precision = 13, scale = 2)
-    private  String balance;
+    private BigDecimal balance;
 
-    @Column(name = "addicional_limit", precision = 13, scale = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
 
